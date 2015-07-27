@@ -1,0 +1,298 @@
+.logo {
+  font-size: 39px;
+  font-family: 'Josefin Slab', serif;
+  
+}
+
+.header {
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+
+/*html body{
+  height: 100%;
+}
+*/
+/*.row .container-fluid{
+height: 100%;
+
+}*/
+.mainimg{
+  max-width: 100%;
+ /* position: fixed;*/
+}
+
+.right{
+
+    height: 100%;
+    /*margin-top: 15px;*/
+}
+
+.left{
+  margin-top: 30px;
+  
+}
+
+.navbar{
+  background-color: white;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #777;
+  background-color: white;
+  margin-left: 55px;
+}
+
+.social {
+  margin-left: 55px;
+  display: none;
+}
+
+hr{
+  margin-left: 55px;
+}
+
+.navbar-default{
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  border: none!important;
+}
+
+.navbar-default .nav .active > a {
+  background: 0 !important; 
+  color: #333 !important;
+  font-weight: bold;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.navbar-default .nav > li > a {
+  color: #333 !important;
+  text-shadow: none !important;
+}
+
+.iconsize {
+  font-size: 20px;
+  color: #b0b0b0;
+  border-color: #b0b0b0;
+  margin-top: 5px;
+}
+
+.iconsize:hover{
+  color: #333333;
+}
+
+.btn-outline{
+  width: 100%;
+    background: none;
+    border: 1px solid #b0b0b0;
+    color: #9c9b98;
+    padding: 5px 5px 5px 5px;
+    box-shadow: none;
+    border-radius:0;
+    text-shadow: none;
+    text-align: left;
+       /* letter-spacing: .1em;*/
+}
+
+.btn-box{
+  /*width: 100%;*/
+    background: none;
+    background-color: #333333;
+    border: 1px solid #333333;
+    color: white;
+    padding: 5px 5px 5px 5px;
+    box-shadow: none;
+    border-radius:0;
+    text-shadow: none;
+    text-align: left;
+    letter-spacing: .1em;
+}
+
+
+#outline {
+  text-shadow: none;
+  color: #9c9b98;
+  border-radius:0;
+ /* background-color: #f6f2e8;*/
+  border-color: #b0b0b0;
+  background-image: none;
+}
+
+#outline:hover {
+  background-color: #333333;
+  color:white;
+
+}
+
+#outline.active {
+  background-color: #333333;
+  color: white;
+}
+
+
+
+.product {
+  margin-top: 20px;
+  position: relative;
+  margin-left: 32px;
+
+}
+
+.ontop{
+  position: absolute; z-index: 1; 
+    top: 80%;
+    left: 58%;
+    display:none;
+}
+
+.product:hover .ontop {
+  display:block;
+}
+
+.img-thumb {
+    display: block;
+    overflow: hidden;
+    width: 80%;
+ /*   height: 400px;*/
+    /*position: relative;*/
+}
+
+.activelink {
+  font-weight: bold;
+}
+.fixed {
+  margin-top: 35px;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+ /* display: block;*/
+}
+
+.fontcolor {
+  color: #CD5C5C;
+  font-size: 14px;
+}
+.text-left {
+  float: left;
+}
+
+.text-right{
+  float: right;
+  margin-right: 20%;
+}
+
+.tick {
+  font-size: 22px;
+  color: #b0b0b0;
+  display: none;
+}
+
+
+.btn-primary:hover {
+    background-color: #333333;}
+
+.producttitle{
+
+}
+
+.size{
+  color: #9c9b98;
+  font-size: 12px;
+}
+
+
+
+@media (min-width: 768px) {
+    .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+    position: fixed;
+    background-color: white;
+
+    }
+    .sidebar-nav .navbar ul {
+    float: none;
+    }
+    .sidebar-nav .navbar ul:not {
+    display: block;
+
+    }
+    .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+    }
+    .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    }
+
+    .sidebar-nav .navbar li a:hover {
+  font-weight: bold;
+    }
+
+  }
+  @media (min-width: 768px) {
+    /* uncomment if you would like the menu to be fixed */
+    /* .navbar {
+      position: fixed;
+      width: 170px;
+      z-index: 2;
+    } */
+  }
+  @media (min-width: 992px) {
+    .navbar {
+      width: 0px; /*212*/
+      background-color: white;
+    }
+    .social {
+      display: inline;
+    }
+
+  }
+  @media (min-width: 1200px) {
+    .navbar {
+      width: 0px; /*262*/
+
+      background-color: white;
+
+    }
+     .social {
+      display: inline;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .fixed {
+      width: 100%;
+      position: relative;
+    }
+    .tog {
+      width:163px;
+    }
+
+    .navbar {
+      margin-top: 25px;}
+
+
+  }
+
+  .sidebar-nav .navbar-header{ 
+  float: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
