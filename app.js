@@ -1,5 +1,7 @@
 $( document ).ready(function() {
   console.log("ready ");
+  var counter = 0;
+  var shortlisted = [];
 
   var data = [
   {
@@ -63,9 +65,17 @@ $( document ).ready(function() {
 
   data.forEach(function add (n) {
                  
-  $('.contentadd').append("<div class = 'col-sm-5 product'><a href='#'><img src= '" + n.imgsrc + " ' class = 'img-thumb'></a><div class='ontop'><span class ='btn btn-primary btn-box'>Shortlist </span><span class='glyphicon glyphicon-ok-circle tick'></span></div><p><p class ='producttitle'> " + n.name + "<span class ='fontcolor text-right'>$ 39.99</span></p><p class ='size'>s m l</p></div></div>");
+    $('.contentadd').append("<div class = 'col-sm-5 product'><a href='#'><img src= '" + n.imgsrc + " ' class = 'img-thumb'></a><div class='ontop'><span class ='btn btn-primary btn-box'>Shortlist </span></div><p><p class ='producttitle'> " + n.name + "<span class ='fontcolor text-right'>$ 39.99</span></p><p class ='size'>s m l</p></div></div>");
   
-  
+  });
+
+  $('.ontop').on("click", function (e) {
+    $(this).attr("class", "seen");
+    $(this).find(".btn-box").css("display", "none")
+    $(this).append ("<span class='glyphicon glyphicon-ok-sign tick'></span>")
+    
+   counter++;
+    $('.shortlist').text(counter);
 
   });
 

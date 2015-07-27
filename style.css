@@ -6,7 +6,7 @@
 
 .header {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   background-color: white;
 }
 
@@ -146,6 +146,13 @@ hr{
     display:none;
 }
 
+.seen{
+  position: absolute; z-index: 1; 
+    top: 80%;
+    left: 58%;
+    display:block;
+}
+
 .product:hover .ontop {
   display:block;
 }
@@ -162,9 +169,9 @@ hr{
   font-weight: bold;
 }
 .fixed {
-  margin-top: 35px;
+  margin-top: 30px;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   background-color: white;
  /* display: block;*/
 }
@@ -183,10 +190,11 @@ hr{
 }
 
 .tick {
-  font-size: 22px;
-  color: #b0b0b0;
-  display: none;
-}
+  font-size: 32px;
+  position: absolute; z-index: 1; 
+    display:block;
+    color: black;
+  }
 
 
 .btn-primary:hover {
@@ -198,9 +206,17 @@ hr{
 
 .size{
   color: #9c9b98;
-  font-size: 12px;
+  font-size: 14px;
 }
 
+.smtext {
+  font-size: 12px !important;
+}
+
+.shortlist {
+  font-weight: bold;
+  color: black;
+}
 
 
 @media (min-width: 768px) {
