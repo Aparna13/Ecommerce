@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ecoomerce</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -10,11 +11,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
   
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
 
 
   
 <link href='http://fonts.googleapis.com/css?family=Josefin+Slab|Great+Vibes|Jura|Damion' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Advent+Pro:400,200|Work+Sans:400,200' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
  
   <link rel="stylesheet" href="style.css">
 </head>
@@ -24,7 +27,7 @@
 
   
     
-    <div class="header col-xs-12"><h1 class="text-center logo">Eshtaa</h1></div>
+    <div class="header col-xs-12"><a href="index.html"><h1 class="text-center logo">Eshtaa</h1></a></div>
           <!-- <div class="col-xs-12 text-center logo "><h1>Eshtaa</h1></div> -->
       <!--     <br>
           <br> -->
@@ -49,7 +52,7 @@
                 </div>
                 <div class="navbar-collapse collapse sidebar-navbar-collapse">
                   <ul class="nav navbar-nav">
-                    <li><a href="#" class="activelink">Dresses</a></li>
+                    <li><a href="pag1.html" class="activelink">Dresses</a></li>
                     <li><a href="#">Tops</a></li>
                     <li><a href="#">Skirts</a></li>
                     <li><a href="#">Pants</a></li>
@@ -67,7 +70,7 @@
             </div>
           </div><!-- left ends -->
           
-              <div class = "fixed col-sm-9 col-sm-offset-3">
+              <div class = "fixed col-sm-9 col-sm-offset-3 filter">
                   <div class="dropdown col-sm-2">
                     <button class="btn btn-primary dropdown-toggle btn-outline smtext" type="button" data-toggle="dropdown">Size
                     <span class="caret"></span></button>
@@ -89,8 +92,8 @@
                   </div>
 
                   <div class="btn-group btn-toggle col-sm-2 " > 
-                    <button class="btn btn-default tog active smtext" id ="outline">All</button>
-                    <button class="btn btn-default  tog smtext" id ="shortlist">Shortlist <span class="shortlist"></span></button>
+                    <button class="btn btn-default tog active smtext outline" id ="all">All</button>
+                    <button class="btn btn-default  tog smtext outline" id ="shortlist">Shortlist <span class="shortlisted"></span></button>
                   </div>
                   <div class="col-sm-2" >
                     <button class = " btn btn-primary btn-outline smtext">Submit</button> 
@@ -113,9 +116,59 @@
     <div class ="row">
       <div class="col-sm-9 col-sm-offset-3 right"><!-- right side 9 wide -->
               <p class ="contentadd"></p>
-              <p class ="shortlistadd"></p>
+              <p class ="shortlistadd hidden"></p>
+              
       </div><!-- right side 9 wide  closes-->
     </div>
+
+    <div class = "productsingle">
+      
+                <div class ="row">
+                  <div class ="col-sm-5 col-sm-offset-1">
+                    <img src="" class ="largeimg" alt="">
+                  </div>
+                  <div class ="col-sm-6">
+                    <br>
+                    <br>
+                    <!-- <h5>asdasd</h5> -->
+                      <p><a href="pag1.html" class ="back"> <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>  <span class ="backtext">Back</span></p>
+                   
+                      <br>
+
+                      <p>
+                        <span class="nicetext">DRESS DESCRIPTION</span><span class="priceright">$39.99</span>
+                      </p>
+                      <p class ="lorem">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporfsfse
+  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quisnostrude ipsum dolor sit sed doame.
+                      </p>
+                      <br>
+                      <hr class ="line">
+                      <p>
+                        <span>Material</span><span class ="pullright moredetails">100 % cotton</span>
+                      </p>
+                      <!-- <hr class ="line">
+                      <p>
+                        <span>Color</span><span class ="pullright"><span class ="block1">d</span><span class ="block2">d</span></span>
+                      </p> -->
+                      <hr class ="line">
+                      <p>
+                        <span>Sizes</span><span class ="pullright moredetails">S M L</span></span>
+                      </p>
+                      <hr class ="line">
+                      <p>
+                        <span>Fabric Care</span><span class ="pullright moredetails">Machine Wash
+                        No Bleach</span></span>
+                      </p>
+                      <hr class ="line">
+                      <br>
+                      <p>
+                        <span><button class ="btn-outline-det">Shortlist</button> </span><span><button class ="pullright btn-outline-act">Add to Cart</button> </span>
+                      </p>
+                  </div>
+                </div>
+             
+    </div><!-- productsingle  closes-->
 
     
   </div>
@@ -123,6 +176,7 @@
  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
  <script src="app.js"></script>
   
 </body>
